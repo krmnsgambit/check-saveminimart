@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check & Save: Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+<body>
+    <!--Header-->
+    <div class="main-nav">
+        <div id="main-logo1" ><img onclick="window.location.href = 'index.html'"; src="images/image-removebg-preview.png" alt="" id="main-logo" ></div>
+        <div id="delivery"><a onclick="window.location.href = 'delivery.html'";>Delivery</a></div>
+        <div id="menu"><a onclick="window.location.href = 'menupage.html'";>Menu</a></div>
+        <div id="location"><a onclick="window.location.href = 'location.html'";>Location</a></div>
+        <div id="franchising"><a onclick="window.location.href = 'franchising.html'";>Franchising</a></div>
+    </div>
+    <div class="break" style="background-color: #dc143c;"> <p>hr break</p></div>
+    <!--Header-->
+    
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+            <!-- Menu items go here -->
+        </div>
+    </div>
+    <div class="card">
+        <div id="formContainer" class="form-container">
+
+
+        <h1>Card</h1>
+        <ul class="listCard">
+            <!-- Card items go here -->
+        </ul>
+        <div class="checkOut">
+            <div class="total" id="showForm" onclick="window.location.href = 'form.html';">Total</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

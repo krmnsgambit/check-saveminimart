@@ -1,0 +1,244 @@
+/*Header*/
+body{font-family: sans-serif;background: #E3E7E8;}
+
+.main-nav
+{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  z-index: 999;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+}
+
+.break {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 5px;
+  z-index: 11;
+}
+
+#main-logo1
+{
+  width: 650px;
+  padding-left: 60px;
+}
+#main-logo
+{
+  width: 130px;
+  cursor: pointer;
+}
+#menu, #delivery, #location, #franchising 
+{
+  flex: 1;
+  cursor: pointer;
+  padding-top: 30px;
+}
+.main-nav a
+{
+  text-decoration:none;
+  color: #dc143c;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600; 
+}
+.break1 p, .break p
+{
+  opacity: 0;
+  height: 5px;
+}
+  /*Header*/
+.main-banner
+{
+  background-image: url(images/place.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-top: -16px;
+}
+
+.infos
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+#imahe1 {
+    margin-left: 245px;
+}
+#imahe2 {
+    margin-left: 156px;
+}
+#imahe3 {
+    margin-left: 65px;
+}
+#imahe1,#imahe2,#imahe3
+{
+  clip-path: circle();
+  width: 138px;
+} 
+
+#image1,#image2,#image3
+{
+  flex: 1;
+}
+hr {
+  width: 61%;
+}
+
+
+.menu
+{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  column-gap: 40px;
+  height: 500px;
+  justify-content: space-around;
+}
+.order1
+{
+  background-color: #dc143c;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/offer1.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 4px gray;
+  border-radius: 10px;
+ 
+}
+
+.order2
+{
+  flex: 1;
+  background-image: url(images/offer3.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 4px gray;
+  border-radius: 10px;
+}
+.order3
+{
+  background-color: darkcyan;
+  flex: 1;
+  background-image: url(images/offer2.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 4px gray;
+  border-radius: 10px;
+
+}
+#view-menu
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h3
+{
+  text-transform: capitalize;
+  font-size: 22px;
+}
+#text1{margin-left: 224px;}
+#text2{margin-left: 117px;}
+#text3{margin-left: 43px;}
+
+
+/*FOOTER*/
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 186px;
+  margin-right: 218px;
+  justify-content: space-around;
+}
+#main-logo2
+{
+  width: 650px;
+  padding-left: 25px;
+  flex: 1;
+}
+#mycel {
+  padding-top: 30px;
+  margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+  #mycel {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}
+#main-logo-footer
+{
+  width: 180px;
+}
+#btn2 {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #dc143c;
+  color: #ffffff;
+  font-weight: Bold;
+  width: 160px;
+  height: 60px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#btn2:hover {
+  background-color: maroon;
+}
+.socials
+{
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: (2, 100px);
+  grid-template-areas:
+    "follows follows follows "
+    "fb twitter ig";
+  margin-right: 176px;
+}
+.follows
+{
+  grid-area: follows;
+  padding-left: 16px;
+  padding-top: 21px;
+}
+.fb
+{
+  grid-area: fb;
+}
+.twitter
+{
+  grid-area: twitter;
+}
+.ig
+{
+  grid-area: ig;
+}
+.socialicon
+{
+  color: #dc143c;
+  font-size: 35px;
+  margin: 0 15px;
+}
+.follows
+{
+  font-size: 18px;
+}
+
+
+
+
+
+
+

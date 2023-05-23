@@ -1,0 +1,300 @@
+/*Header*/
+body{font-family: sans-serif;background: #E3E7E8;}
+
+.main-nav
+{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  z-index: 999;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+}
+
+.break {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 5px;
+  z-index: 11;
+}
+
+#main-logo1
+{
+  width: 650px;
+  padding-left: 60px;
+}
+#main-logo
+{
+  width: 130px;
+  cursor: pointer;
+}
+#menu, #delivery, #location, #franchising 
+{
+  flex: 1;
+  cursor: pointer;
+  padding-top: 30px;
+}
+.main-nav a
+{
+  text-decoration:none;
+  color: #dc143c;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600; 
+}
+.break1 p, .break p
+{
+  opacity: 0;
+  height: 5px;
+}
+  /*Header*/
+/*FOOTER*/
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 186px;
+  margin-right: 218px;
+  justify-content: space-around;
+}
+#main-logo2
+{
+  width: 650px;
+  padding-left: 25px;
+  flex: 1;
+}
+#mycel {
+  padding-top: 30px;
+  margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+  #mycel {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}
+#main-logo-footer
+{
+  width: 180px;
+}
+#btn2 {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #dc143c;
+  color: #ffffff;
+  font-weight: Bold;
+  width: 160px;
+  height: 60px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#btn2:hover {
+  background-color: maroon;
+}
+.socials
+{
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: (2, 100px);
+  grid-template-areas:
+    "follows follows follows "
+    "fb twitter ig";
+  margin-right: 176px;
+}
+.follows
+{
+  grid-area: follows;
+  padding-left: 16px;
+  padding-top: 21px;
+}
+.fb
+{
+  grid-area: fb;
+}
+.twitter
+{
+  grid-area: twitter;
+}
+.ig
+{
+  grid-area: ig;
+}
+.socialicon
+{
+  color: #dc143c;
+  font-size: 35px;
+  margin: 0 15px;
+}
+.follows
+{
+  font-size: 18px;
+}
+/* Title */
+
+body 
+{
+    font-family: 'Oswald', sans-serif;
+    background-color: azure;
+    margin-top: 84px;
+}
+.check, .delivery
+{
+    color: red;
+            
+}
+.whole 
+{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 120px;
+
+}
+/* text */
+.title {
+    font-weight: bold;
+    font-size: 6ch;
+}
+.delivery, .context 
+{
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+}
+.context
+{
+  margin-top: -20px;
+  color: rgb(58, 57, 57);
+}
+.delivery
+{
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.none
+{
+    height: 30px;
+}
+
+img
+{
+    width: 400px;    
+}
+
+/* main content */
+
+.m-container 
+{
+    height: 700px;
+    background-color: #eb5252;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image-border
+{
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-top: 65px;
+    margin-left: 50px;
+}
+.header-context {
+  margin-top: 90px;
+  background-color: white;
+  border-radius: 10px;
+  color:#dc143c;
+  text-align: justify;
+  text-align-last: center;
+  border: 2px solid red;
+  margin-left: 30px;
+
+}
+.or
+{
+    display: flex;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+#semi-context
+{
+  margin-left: 30px;
+  color: white;
+}
+/* button */
+.button-container
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn1 
+{
+    --color: #ad0b0bf3;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-left: 70px;
+    cursor: pointer;
+}
+   
+.btn1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+   
+.btn1:hover 
+{
+  color: #fff;
+}
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+   
+   .btn1:hover:before {
+    top: -55px;
+    left: -30px;
+   }
+   
+   .btn1:active:before {
+    background: #ad0b0bf3;
+    transition: background 0s;
+   }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check & Save: Cash out</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    
+</head>
+<body>
+   
+   <div class="main-container">
+   <h3>Check out</h3>
+   <h5>[Please proceed if you're sure with your order]</h5>
+   <div class="box">
+	<span><a class="button" href="menupage.html">Back</a></span> <span style="margin-left: 100px;"><a class="button" href="#divOne">Proceed</a></span>
+   </div>
+   </div>
+   <div class="overlay" id="divOne">
+      <div class="wrapper">
+         <h2>Please fill out the form</h2>
+         <a class="close" href="#">&times;</a>
+         <div class="content">
+            <div class="container">
+               <form id="myForm">
+                  <label for="firstName">Name</label>
+                  <input id="firstName" placeholder="Your name.." type="text" required>
+                  <label for="lastName">Address</label>
+                  <input id="lastName" placeholder="Your address.." type="text" required>
+                  <label for="subject">Number</label> 
+                  <textarea id="subject" placeholder="0000-000-0000" required></textarea>
+                  <input type="submit" value="Check out" >
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="overlay" id="successOverlay">
+      <div class="wrapper">
+         <h2>Success!</h2>
+         <div class="content">
+            <p>Your order was successfully submitted!</p>
+            <a class="close" href="index.html">&times;</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="overlay" id="errorOverlay">
+      <div class="wrapper">
+         <h2>Error</h2>
+         <div class="content">
+            <p>Please fill out all the fields before continuing.</p>
+            <a class="close" href="#">&times;</a>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      // JavaScript code here
+      const form = document.getElementById('myForm');
+      const successOverlay = document.getElementById('successOverlay');
+      const errorOverlay = document.getElementById('errorOverlay');
+
+      form.addEventListener('submit', function (event) {
+         event.preventDefault(); // Prevent form submission
+
+         const firstName = document.getElementById('firstName').value;
+         const lastName = document.getElementById('lastName').value;
+         const subject = document.getElementById('subject').value;
+
+         if (firstName === '' || lastName === '' || subject === '') {
+            // Show error overlay if any field is empty
+            errorOverlay.style.visibility = 'visible';
+            errorOverlay.style.opacity = '1';
+         } else if (!/^\d+$/.test(subject)) {
+            // Show error overlay if subject is not a number
+            errorOverlay.style.visibility = 'visible';
+            errorOverlay.style.opacity = '1';
+            errorOverlay.querySelector('p').textContent = 'That is not a number, please enter a valid number';
+         } else {
+            // Show success overlay
+            successOverlay.style.visibility = 'visible';
+            successOverlay.style.opacity = '1';
+         }
+      });
+
+      const closeButtons = document.querySelectorAll('.close');
+      for (const closeButton of closeButtons) {
+         closeButton.addEventListener('click', function () {
+            successOverlay.style.visibility = 'hidden';
+            successOverlay.style.opacity = '0';
+
+            errorOverlay.style.visibility = 'hidden';
+            errorOverlay.style.opacity = '0';
+         });
+      }
+   </script>
+</body>
+</html>

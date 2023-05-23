@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="socia.css">
+    <title>Check & Save: Socials</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <script>
+        function copyToClipboard(selector) {
+            const tooltip1Text = document.querySelector(selector).innerText;
+            navigator.clipboard.writeText(tooltip1Text).then(function() {
+                alert('Email address copied to clipboard!');
+            }).catch(function() {
+                alert('Failed to copy email address.');
+            });
+        }
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <div class="main-nav">
+        <div id="main-logo1" ><img onclick="window.location.href = 'index.html'"; src="images/image-removebg-preview.png" alt="" id="main-logo" ></div>
+        <div id="delivery"><a onclick="window.location.href = 'delivery.html'";>Delivery</a></div>
+        <div id="menu"><a onclick="window.location.href = 'menupage.html'";>Menu</a></div>
+        <div id="location"><a onclick="window.location.href = 'location.html'";>Location</a></div>
+        <div id="franchising"><a onclick="window.location.href = 'franchising.html'";>Franchising</a></div>
+    </div>
+    <div class="break" style="background-color: #dc143c;"> <p>hr break</p></div>
+    <!--Header-->
+    <div class="main-container">
+        <header class="header" >
+            <p class="title"><span class="whole"><span class="check">Check</span> & Save</span> Socials</p>
+        </header>
+
+        <div class="none"> </div>
+
+        <!-- Main Content -->
+        <main class="first-container">
+            <ul  class="wrapper">
+            <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span>
+                    <img src="images/FB.avif" alt="Facebook" onclick="window.location.href='https://www.facebook.com/profile.php?id=100090108335209'">
+                    <i class="fab fa-facebook-f"></i>
+                </span>
+            </li>
+            <li class="icon twitter">
+                <span class="tooltip">Email</span> <span class="tooltip1">punuaaronpaul@gmail.com</span>
+                <span>
+                    <img src="images/email.webp" alt="Email" onclick="copyToClipboard('.tooltip1')">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </li>
+            <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span>
+                    <img src="images/instagram.webp" alt="Instagram" onclick="window.location.href='https://www.instagram.com/'">
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </li>
+        </ul>
+
+        <div class="second-container">
+            <div class="phone">
+                <div><image class="img" src="images/PHONE.jpg" alt=""></image></div>
+                <br>
+                <div class="text">Cellphone Number:<br><br>0939 268 4394</div>
+            </div>
+
+            <div class="address">
+                <div><image class="img" src="images/address.png" alt=""></image></div>
+                <br>
+                <div class="text">Address:<br><br>#1083 Baluyut Street. Sta. Cruz, Magalang, Philippines</div>
+            </div>
+        </div>
+        </main>
+        
+<!--Footer-->
+
+<div class="break1" style="background-color: #dc143c;"> <p>hr break</p></div>
+<div class="footer-container">
+<div class="footer">
+    <div id="main-logo2"><img src="images/image-removebg-preview.png" alt="" id="main-logo-footer"></div>
+    <div class="socials">
+        <div class="follows">Follow us on</div>
+        <div class="fb"> <a href="https://www.facebook.com/profile.php?id=100090108335209" target="_blank" class="socialicon"><ion-icon name="logo-facebook"></ion-icon></a></div>
+        <div class="twitter"> <a href="#"><ion-icon name="logo-twitter" class="socialicon"></ion-icon></a></div>
+        <div class="ig"> <a href="#"><ion-icon name="logo-instagram" class="socialicon"></ion-icon></a></div>
+        
+    </div>
+    <div id="mycel"><button id="footer-button" onclick="window.location.href = 'menupage.html'";> Order Now</button></div>
+
+</div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
